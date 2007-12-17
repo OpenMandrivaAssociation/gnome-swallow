@@ -10,7 +10,6 @@ License: 	GPL
 URL:		http://www-unix.oit.umass.edu/~tetron/technology/swallow/
 Group: 		Graphical desktop/GNOME
 Source: 	%{name}-%{version}.tar.bz2
-Buildroot: 	%_tmppath/%{name}-root
 BuildRequires: 	gnome-panel-devel
 
 %description
