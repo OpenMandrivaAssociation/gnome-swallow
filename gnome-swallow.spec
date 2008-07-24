@@ -1,6 +1,6 @@
 %define name 	gnome-swallow
 %define version 1.2
-%define release %mkrel 2
+%define release %mkrel 4
 
 Summary: 	Embeds small programs into the GNOME panel
 Name: 		%name
