@@ -1,6 +1,6 @@
 %define name 	gnome-swallow
 %define version 1.2
-%define release %mkrel 5
+%define release %mkrel 6
 
 Summary: 	Embeds small programs into the GNOME panel
 Name: 		%name
@@ -10,6 +10,9 @@ License: 	GPL
 URL:		http://www-unix.oit.umass.edu/~tetron/technology/swallow/
 Group: 		Graphical desktop/GNOME
 Source: 	%{name}-%{version}.tar.bz2
+Patch0:		gnome-swallow-1.2-as-needed.patch
+Patch1:		gnome-swallow-1.2-libgnomeui-flags.patch
+Patch2:		gnome-swallow-1.2-qa-warning.patch
 Buildroot: 	%_tmppath/%{name}-root
 BuildRequires: 	gnome-panel-devel
 
@@ -20,8 +23,12 @@ just an icon or an applet.
 
 %prep
 %setup -q
+%patch0 -p1
+%patch1 -p1
+%patch2 -p1
 
 %build
+autoreconf -f -i
 %configure2_5x
 %make
 
