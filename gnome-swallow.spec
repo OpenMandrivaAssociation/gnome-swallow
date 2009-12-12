@@ -15,6 +15,7 @@ Patch1:		gnome-swallow-1.2-libgnomeui-flags.patch
 Patch2:		gnome-swallow-1.2-qa-warning.patch
 Buildroot: 	%_tmppath/%{name}-root
 BuildRequires: 	gnome-panel-devel
+BuildRequires:	gnomeui2-devel
 
 %description
 An applet for GNOME2 that allows any small application to be embedded into
