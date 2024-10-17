@@ -7,7 +7,7 @@ Name: 		%name
 Version: 	%version
 Release: 	%release
 License: 	GPL
-URL:		http://www-unix.oit.umass.edu/~tetron/technology/swallow/
+URL:		https://www-unix.oit.umass.edu/~tetron/technology/swallow/
 Group: 		Graphical desktop/GNOME
 Source: 	%{name}-%{version}.tar.bz2
 Patch0:		gnome-swallow-1.2-as-needed.patch
