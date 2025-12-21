@@ -14,6 +14,11 @@ Patch0:		gnome-swallow-1.2-as-needed.patch
 Patch1:		gnome-swallow-1.2-libgnomeui-flags.patch
 Patch2:		gnome-swallow-1.2-qa-warning.patch
 Buildroot: 	%_tmppath/%{name}-root
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires: 	gnome-panel-devel
 BuildRequires:	gnomeui2-devel
 
